@@ -57,11 +57,11 @@
                             <td><?php echo $row['created_at']?></td>
                             <td>
                                 
-                                <a href="edit.php?id=<?php echo $row['id']?>">
-                                    
+                                <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
+                                    <i class="fa-solid fa-pen"></i>
                                 </a>
-                                <a href="delete_task.php?id=<?php echo $row['id']?>">
-                                    
+                                <a href="delete_task.php?id=<?php echo $row['id']?>" class="btn btn-danger">
+                                    <i class="far fa-trash-alt"></i>
                                 </a>
 
                             </td>
