@@ -58,10 +58,10 @@
                             <td>
                                 
                                 <a href="edit.php?id=<?php echo $row['id']?>">
-                                    Edit
+                                    
                                 </a>
                                 <a href="delete_task.php?id=<?php echo $row['id']?>">
-                                    Delete
+                                    
                                 </a>
 
                             </td>
