@@ -13,7 +13,7 @@
 <body>
     
     <div class="card  card-body text-center position-absolute top-50 start-50 translate-middle" style="width: 25rem;">
-        <form action="index.php" method="POST">
+        <form action="index.php" onsubmit="return isvalid()" method="POST">
             <div class="form-group">
                 <h1 class="card-title">LOGIN</h1>
                 <br><br>
@@ -24,13 +24,34 @@
             <br>
             <div class="form-group">
                 <h3 class="card-text">Password</h3>
-            <input type="password" name="password" class="form-control"
+            <input type="password" name="pass" class="form-control"
             placeholder="Enter your password" autofocus>
             </div> <br>
             <input type="submit" class="btn btn-warning btn-block"
             name="save_user" value="Save">
         </form>
     </div>
+    <script>
+        function isvalid(){
+            var user = document.form.user.value;
+            var pass = document.form.pass.value;
+            if(user.lenght=="" && pass.length==""){
+                alert("Username and password field is empty");
+                return false
+            }
+            else{
+                if(user.lenght==""){
+                alert("Username is empty");
+                return false
+                }
+                if(pass.length==""){
+                alert("password field is empty");
+                return false
+                }
+
+            }
+        }
+    </script>
     
 </body>
 </html>

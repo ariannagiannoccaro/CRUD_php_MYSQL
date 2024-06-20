@@ -8,7 +8,10 @@ $conn = mysqli_connect(
     'root', //usuario
     '',//contraseña
     'php_crud_mysql'//nombre de la base de datos
+
 );
+
+
 
 
 ?>
